@@ -38,9 +38,13 @@ Things inside "[ ]" are fetched, things outside "[ ]" are stored.
 Here is a short demo program:
 
 10 "While 10 is running @ = 20\n"
+
 20 [@] $  [40] @  # a subroutine call to line 40 storing return on the stack
+
 30 [99]@
+
 40 "A subroutine! " [$] @   # A one-line subroutine that only prints "A subroutine!" then returns
+
 99 .  "End of file Sentinal and command to stop executing"
 
 

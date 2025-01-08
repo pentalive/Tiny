@@ -36,12 +36,12 @@ Things inside "[ ]" are fetched, things outside "[ ]" are stored.
 [ a 1 +] a  # increment a
 
 Here is a short demo program:
-==================================================================================================
+
 10 "While 10 is running @ = 20\n"
 20 [@] $  [40] @  # a subroutine call to line 40 storing return on the stack
 30 [99]@
-40 "A subroutine! " [$] @   # A one line subroutine that only prints "A subroutine!" then returns
-99 .  "End of file sentinal and command to stop executing"
-==================================================================================================
+40 "A subroutine! " [$] @   # A one-line subroutine that only prints "A subroutine!" then returns
+99 .  "End of file Sentinal and command to stop executing"
+
 
 See https://esolangs.org/wiki/Tiny
